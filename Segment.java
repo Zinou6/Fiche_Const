@@ -31,4 +31,10 @@ public class Segment {
     {
         return A.Symetrie() + B.Symetrie();
     }
+    
+    // symetrie()
+    
+     public Segment symetrie() {
+        return new Segment(A.symetrie(), B.symetrie());
+    }
 }
