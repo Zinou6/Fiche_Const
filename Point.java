@@ -36,9 +36,12 @@ public class Point {
      
     public String Symetrie ()
     {
-        return "("+(-this.abscisse)+ "," +this.ordonnee+ ")";
+        return "("+(-this.abscisse)+ "," +this.ordonnee+ ")"; //incorrect 
     }
-    
+        public Point symetrie(){
+        return new Point(-this.abscisse,this.ordonnee);
+    }
+
     @Override
     public String toString ()  
     {
