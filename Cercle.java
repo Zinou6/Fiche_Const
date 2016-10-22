@@ -29,6 +29,10 @@ public class Cercle {
     
     public String Symetrie ()
     {
-        return "Centre est :"+this.Centre.Symetrie() +" et le Rayon est :"+ this.Rayon.Symetrie();
+        return "Centre est :"+this.Centre.Symetrie() +" et le Rayon est :"+ this.Rayon.Symetrie(); // peut rester le meme
+    }
+    
+       public Cercle symetrie() {
+        return new Cercle(c.symetrie(), rayon);
     }
 }
